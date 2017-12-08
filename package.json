@@ -3,5 +3,5 @@
   "version": "",
   "scripts": {
     "start": "run.js"
-  },
+  }
 }
