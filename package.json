@@ -1,7 +1,16 @@
 {
-  "name": "",
-  "version": "",
+  "name": "House-of-Science-Robotics-8757",
+  "version": "0.0.1",
+   "description": "Website for online challenge",
+  "engines": {
+    "node": "8.9.1"
+  },
+  "main": "run.js",
   "scripts": {
     "start": "run.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jedijoe100/house-of-science-robotics-8757.git"
   }
 }
