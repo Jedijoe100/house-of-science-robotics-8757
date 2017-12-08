@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="lol memes">
+	<meta name="keywords" content="robot,8757,vex,hos">
+	<meta name="author" content="Joe Kent">
+		<title>8757C</title>
+		<link rel="stylesheet" type="text/css" href="mainStyle.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body id="theMatrix" class="container-fluid">
+	<div id="title">
+			<h1>House of Science Robotics - 8757</h1>
+		</div>
+		<br>
+		<div id="clickBait" ><!--data-spy="affix" data-offset-top="130"-->
+			<ul class="nav nav-pills nav-justified link1" >
+				<li ><a href="index.html" class="link">Home</a></li>
+				<li ><a href="club.html" class="link">The People</a></li>
+				<li ><a href="robots.html" class="link">The Robot</a></li>
+				<li class="active"><a href="#">The Club</a></li>
+			</ul>
+		</div>
+		<br>
+		<div class="row" id="maininfo">
+			<div class="col-sm-6">
+				<div class="peopleWhoAreFired" id="col1">
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="peopleWhoAreFired" id="col2">
+				</div>
+			</div>
+		</div>
+		<br>
+		<div id="jacobsStinkyFeet">
+			<div class="row">
+				<div class="col-sm-12">
+					<h2>Websites assotiated with us</h2>
+					<a href="http://houseofscience.nz/">House of Science</a><br> 
+					<a href="https://www.vexrobotics.com/">VEX robotics</a>
+				</div>
+			</div>
+		</div>
+		<script>
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function(){
+		if(this.readyState == 4 && this.status == 200){
+		myFunction(this);
+		}
+		};
+		xhttp.open("POST", "articles.xml", true);
+		xhttp.send();
+		function myFunction(xml) {
+			var xmlDoc = xml.responseXML;
+			var z = 0;
+			var b = xmlDoc.getElementsByTagName("category");
+			var x = xmlDoc.getElementsByTagName("title");
+			var y = xmlDoc.getElementsByTagName("text");
+			var a = xmlDoc.getElementsByTagName("picture");
+			var colnum1 = "col1"
+			var colnum2 = "col2"
+			var colvar = colnum1;
+			for(i = 0; i < x.length; i++){
+				if(b[i].childNodes[0].nodeValue == "Club"){
+					document.getElementById(colvar).innerHTML += "<div class='section'><a data-toggle='collapse'  href='.Article" + z +"' ><div class='top'><h3 class='title1'>" + x[i].childNodes[0].nodeValue +"</h3></div></a><br><div class='row box collapse panel-collapse Article"+z+"'><div class='col-sm-6 '><img src='"+ a[i].childNodes[0].nodeValue +"' class='articleimg img-responsive'></div><div class='col-sm-6'><p>" + y[i].childNodes[0].nodeValue +"</p></div></div><div class='row box collapse panel-collapse in Article"+z+"'><img src='"+ a[i].childNodes[0].nodeValue +"' class='articleimg img-responsive'></div></div><br>";
+					z += 1;
+					if(colvar == colnum1){
+						colvar = colnum2;
+					} else {
+						colvar = colnum1;
+					}
+				}
+			}
+		}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,86 @@
+#maininfo {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+#clickBait {
+	/*background-color: #3d4b52;*/
+	text-align: center;
+	color: #347B98;
+	background-color: white;
+}
+.peopleWhoAreFired {
+	
+}
+.articleimg {
+	
+}
+.link {
+	color: #0033cc;
+	background-color: white;
+}
+.link1 {
+	background-color: white;
+}
+ 
+#title {
+	padding: 17px;
+	background-color: #6d8ba2;
+	text-align: center;
+	color: white;
+	font:comic-sans;
+}
+.section {
+	color: #347B98;
+	min-height: 377px;
+	padding: 10px;
+	border-color: #0099ff;
+	border-width: 1px;
+	border-radius: 5px;
+	margin: 0px;
+}
+.box {
+	margin: 10px;
+	/*padding-left: 10px;*/
+	border-style: solid;
+	border-color: #0099ff;
+	border-width: 1px;
+	min-height: 270px;
+	/*background-color: #F0F7D4;*/
+	border-radius: 5px;
+}
+.affix {
+      top: 0;
+      width: 100%;
+  }
+#ads {
+	background-color: #3d4b52;
+	color: #347B98;
+}
+.affix + .container-fluid {
+      padding-top: 70px;
+  }
+body {
+	background-image: url("background.png");
+}
+#jacobsStinkyFeet {
+	background-color: #3d4b52;
+	text-align: center;
+	color: white;
+}
+/*a {
+	color: orange;
+}
+.title1 {
+	color: orange;
+	
+}*/
+.top {
+	border-bottom: 1px solid #0099ff;
+	background-color: rgba(255, 255, 255, 0.4);
+	margin: -15px;
+}
+.navigationLinks {
+	width: 33.5%;
+	height: 30px;
+	text-align: center;
+	background-color: #347B98;
+}
