@@ -18,14 +18,17 @@ http.createServer(function (req, res) {
 
 		switch (filetype){
 			case '.html':
-			res.writeHead(200, {'Content-Type': 'text/html'});
-			break;
+			    res.writeHead(200, {'Content-Type': 'text/html'});
+			    break;
 			case '.css':
-			res.writeHead(200, {'Content-Type': 'text/css'});
-			break;
+			    res.writeHead(200, {'Content-Type': 'text/css'});
+			    break;
 			case '.xml':
-			res.writeHead(200, {'Content-Type': 'text/xml'});
-			break;
+			    res.writeHead(200, {'Content-Type': 'text/xml'});
+			    break;
+            case '.png':
+                res.writeHead(200, {'Content-Type': 'image/png'});
+                break;
 		}
 		res.write(content);
 		return res.end();
