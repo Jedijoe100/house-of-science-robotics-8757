@@ -10,8 +10,6 @@ express()
 .get('/people', (req, res) => res.render('pages/people'))
 .get('/club', (req, res) => res.render('pages/club'))
 .get('/robots', (req, res) => res.render('pages/robots'))
-.set('view engine', 'xml')
-.get('/article', (req, res) => res.render('xml/article'))
 .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 
