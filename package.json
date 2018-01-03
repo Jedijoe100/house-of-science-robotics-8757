@@ -1,6 +1,6 @@
 {
   "name": "House-of-Science-Robotics-8757",
-  "version": "0.0.1",
+  "version": "0.0.2",
    "description": "Website for online challenge",
   "engines": {
     "node": "8.9.1"
@@ -9,8 +9,22 @@
   "scripts": {
     "start": "run.js"
   },
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Jedijoe100/house-of-science-robotics-8757.git"
   }
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }

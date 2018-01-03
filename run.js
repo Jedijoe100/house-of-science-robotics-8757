@@ -1,4 +1,16 @@
-//node D:\Documents\website\run.js
+const express = require('express')
+const path = require('path')
+const PORT = process.env.PORT || 5000
+
+express()
+    .use(express.static(path.join(__dirname, 'public')))
+    .set('views', path.join(__dirname, 'views'))
+    .set('view engine', 'ejs')
+    .get('/', (req, res) => res.render('pages/index'))
+.listen(PORT, () => console.log(`Listening on ${ PORT }`))
+
+
+/*//node D:\Documents\website\run.js
 var http = require('http');
 var url = require('url');
 var fs = require('fs');
@@ -33,4 +45,4 @@ http.createServer(function (req, res) {
 		res.write(content);
 		return res.end();
 	});
-}).listen(8080);
+}).listen(8080);*/
