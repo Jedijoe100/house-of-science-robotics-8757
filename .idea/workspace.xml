@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6e78fa2-a23f-4351-bffe-08e8265d87ed" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/run.js" afterPath="$PROJECT_DIR$/run.js" />
       <change beforePath="$PROJECT_DIR$/views/pages/index.ejs" afterPath="$PROJECT_DIR$/views/pages/index.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,8 +20,8 @@
       <file leaf-file-name="run.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+            <state relative-caret-position="187">
+              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -60,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/views/pages/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+              <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -132,7 +133,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/run.js" />
         <option value="$PROJECT_DIR$/views/partials/nav.ejs" />
         <option value="$PROJECT_DIR$/views/partials/footer.ejs" />
         <option value="$PROJECT_DIR$/views/partials/header.ejs" />
@@ -142,6 +142,7 @@
         <option value="$PROJECT_DIR$/views/pages/club.ejs" />
         <option value="$PROJECT_DIR$/views/pages/people.ejs" />
         <option value="$PROJECT_DIR$/views/pages/robots.ejs" />
+        <option value="$PROJECT_DIR$/run.js" />
         <option value="$PROJECT_DIR$/views/pages/index.ejs" />
       </list>
     </option>
@@ -239,12 +240,12 @@
       <updated>1514921017266</updated>
       <workItem from="1514921018607" duration="1352000" />
       <workItem from="1514954151803" duration="816000" />
-      <workItem from="1515002017106" duration="3356000" />
+      <workItem from="1515002017106" duration="3652000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5524000" />
+    <option name="totallyTimeSpent" value="5820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -499,8 +500,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/run.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        <state relative-caret-position="187">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -508,7 +509,7 @@
     <entry file="file://$PROJECT_DIR$/views/pages/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
           <folding />
         </state>
       </provider>
