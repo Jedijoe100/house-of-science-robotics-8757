@@ -1,6 +1,6 @@
 {
   "name": "House-of-Science-Robotics-8757",
-  "version": "0.0.2",
+  "version": "0.1.0",
    "description": "Website for online challenge",
   "engines": {
     "node": "8.9.1"
