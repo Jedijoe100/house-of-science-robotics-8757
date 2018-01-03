@@ -4,7 +4,7 @@ if(this.readyState == 4 && this.status == 200){
 myFunction(this);
 }
 };
-xhttp.open("POST", "/public/articles.xml", true);
+xhttp.open("POST", "articles.xml", true);
 xhttp.send();
 function myFunction(xml) {
 var xmlDoc = xml.responseXML;
@@ -18,7 +18,7 @@ var colnum2 = "col2"
 var colvar = colnum1;
 for(i = 0; i < x.length; i++){
 if(b[i].childNodes[0].nodeValue == category || category == ""){
-document.getElementById(colvar).innerHTML += "<div class='section'><a data-toggle='collapse'  href='.Article" + z +"' ><div class='top'><h3 class='title1'>" + x[i].childNodes[0].nodeValue +"</h3></div></a><br><div class='row box collapse panel-collapse Article"+z+"'><div class='col-sm-6 '><img src='"+ a[i].childNodes[0].nodeValue +"' class='articleimg img-responsive'></div><div class='col-sm-6'><p>" + y[i].childNodes[0].nodeValue +"</p></div></div><div class='row box collapse panel-collapse in Article"+z+"'><img src='"+ a[i].childNodes[0].nodeValue +"' class='articleimg img-responsive'></div></div><br>";
+document.getElementById(colvar).innerHTML += "<div class='section'><a data-toggle='collapse'  href='.Article" + z +"' ><div class='top'><h3 class='title1'>" + x[i].childNodes[0].nodeValue +"</h3></div></a><br><div class='row box collapse panel-collapse Article"+z+"'><div class='col-sm-6 '><img src='/images/"+ a[i].childNodes[0].nodeValue +"' class='articleimg img-responsive'></div><div class='col-sm-6'><p>" + y[i].childNodes[0].nodeValue +"</p></div></div><div class='row box collapse panel-collapse in Article"+z+"'><img src='/images/"+ a[i].childNodes[0].nodeValue +"' class='articleimg img-responsive'></div></div><br>";
 z += 1;
 if(colvar == colnum1){
 colvar = colnum2;
