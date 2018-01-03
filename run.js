@@ -10,7 +10,7 @@ express()
     .get('/people', (req, res) => res.render('pages/people'))
     .get('/club', (req, res) => res.render('pages/club'))
     .get('/robots', (req, res) => res.render('pages/robots'))
-    .contentType('text/xml')
+express().contentType('text/xml')
     .get('/articles', (req, res) => res.render('pages/artiles'))
     .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
