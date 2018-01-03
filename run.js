@@ -7,10 +7,11 @@ express()
     .set('views', path.join(__dirname, 'views'))
     .set('view engine', 'ejs')
     .get('/', (req, res) => res.render('pages/index'))
-.get('/people', (req, res) => res.render('pages/people'))
-.get('/club', (req, res) => res.render('pages/club'))
-.get('/robots', (req, res) => res.render('pages/robots'))
-.listen(PORT, () => console.log(`Listening on ${ PORT }`))
+    .get('/people', (req, res) => res.render('pages/people'))
+    .get('/club', (req, res) => res.render('pages/club'))
+    .get('/robots', (req, res) => res.render('pages/robots'))
+    .get('/articles', (req, res) => res.render('xml/articles'))
+    .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 
 /*//node D:\Documents\website\run.js
