@@ -4,7 +4,7 @@ if(this.readyState == 4 && this.status == 200){
 myFunction(this);
 }
 };
-xhttp.open("POST", "articles.xml", true);
+xhttp.open("POST", "/articles", true);
 xhttp.send();
 function myFunction(xml) {
 var xmlDoc = xml.responseXML;
