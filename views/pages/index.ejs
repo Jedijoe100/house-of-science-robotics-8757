@@ -1,5 +1,4 @@
 <% include ../partials/header.ejs %>
-
 <div id="clickBait" ><!--data-spy="affix" data-offset-top="130"-->
   <ul class="nav nav-pills nav-justified link1" >
     <li class="active"><a href="#">Home</a></li>
@@ -8,21 +7,8 @@
     <li><a href="/club" class="link">The Club</a></li>
   </ul>
 </div>
-<br>
-<div class="row" id="maininfo">
-  <div class="col-sm-6">
-    <div class="peopleWhoAreFired" id="col1">
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="peopleWhoAreFired" id="col2">
-    </div>
-  </div>
-</div>
-<br>
-
+<% include ../partials/body.ejs %>
 <% include ../partials/footer.ejs %>
-
 <script>
     var category = ""
     <% include ../partials/script.ejs %>
