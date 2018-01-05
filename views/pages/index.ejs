@@ -17,13 +17,8 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 <br>
-
-<!-- The dots/circles -->
 <div style="text-align:center">
     <div id="dots"></div>
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 <% include ../partials/footer.ejs %>
 <script>
@@ -42,10 +37,9 @@
         var image = xmlDoc.getElementsByTagName("url");
         var articleNum = 0;
         for(i = 0; i < date.length; i++){
-            if(b[i].childNodes[0].nodeValue == category || category == ""){
                 articleNum += 1;
                 document.getElementById("slideshow").innerHTML += "<div class='mySlides fade'><div class='numbertext'>"+articleNum+" / "+ date.length +"</div><img src='"+ image[i].childNodes[0].nodeValue +"' style='width:100%'><div class='text'>" + caption[i].childNodes[0].nodeValue +"</div></div>";
-            }
+                document.getElementById("dots").innerHTML += "<span class='ot'nclick='currentSlide("+articleNum+")'></span>";
         }
     }
 </script>
