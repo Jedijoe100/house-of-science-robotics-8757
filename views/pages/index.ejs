@@ -34,7 +34,7 @@
         var xmlDoc = xml.responseXML;
         var date = xmlDoc.getElementsByTagName("date");
         var caption = xmlDoc.getElementsByTagName("caption");
-        var image = xmlDoc.getElementsByTagName("url");
+        var image = xmlDoc.getElementsByTagName("src");
         var articleNum = 0;
         for(i = 0; i < date.length; i++){
                 articleNum += 1;
