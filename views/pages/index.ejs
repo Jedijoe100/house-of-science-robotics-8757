@@ -40,7 +40,7 @@
         var image = xmlDoc.getElementsByTagName("src");
         for(i = 0; i < date.length; i++){
                 articleNum += 1;
-                document.getElementById("slideshow").innerHTML += "<div class='mySlides fade'><div class='numbertext'>"+articleNum+" / "+ date.length +"</div><img src='/images/"+ image[i].childNodes[0].nodeValue +"' class='articleimg' style='width:100%'><div class='text'>" + caption[i].childNodes[0].nodeValue +"</div></div>";
+                document.getElementById("slideshow").innerHTML += "<div class='mySlides fade'><div class='numbertext'>"+articleNum+" / "+ date.length +"</div><img src='/images/"+ image[i].childNodes[0].nodeValue +"' class='articleimg'><div class='text'>" + caption[i].childNodes[0].nodeValue +"</div></div>";
                 document.getElementById("dots").innerHTML += "<span class='dot'nclick='currentSlide("+articleNum+")'></span>";
         }
     }
