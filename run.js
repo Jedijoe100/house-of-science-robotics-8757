@@ -11,6 +11,7 @@ express()
     .get('/club', (req, res) => res.render('pages/club'))
     .get('/robots', (req, res) => res.render('pages/robots'))
     .get('/articles', (req, res) => res.contentType('text/xml').render('pages/articles'))
+    .get('/images', (req, res) => res.contentType('text/xml').render('pages/images'))
     //.get('/articles', (req, res) => res.render('pages/articles'))
     .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
