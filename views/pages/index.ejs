@@ -9,7 +9,7 @@
 </div>
   <div class="slideshow-container">
     <!-- Full-width images with number and caption text -->
-    <div id="slideshow">
+    <div id="slideshowt">
     
     </div>
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -40,7 +40,7 @@
         var image = xmlDoc.getElementsByTagName("src");
         for(i = 0; i < date.length; i++){
                 articleNum += 1;
-                document.getElementById("slideshow").innerHTML += "<div class='mySlides fade'><div class='numbertext'>"+articleNum+" / "+ date.length +"</div><img src='/images/"+ image[i].childNodes[0].nodeValue +"' class='articleimg'><div class='text'>" + caption[i].childNodes[0].nodeValue +"</div></div>";
+                document.getElementById("slideshowt").innerHTML += "<div class='mySlides fade'><div class='numbertext'>"+articleNum+" / "+ date.length +"</div><img src='/images/"+ image[i].childNodes[0].nodeValue +"' class='articleimg'><div class='text'>" + caption[i].childNodes[0].nodeValue +"</div></div>";
                 document.getElementById("dots").innerHTML += "<span class='dot'nclick='currentSlide("+articleNum+")'></span>";
         }
     }
