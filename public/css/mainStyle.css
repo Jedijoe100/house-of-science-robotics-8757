@@ -3,6 +3,7 @@
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
+    max-height: 400px;
   position: relative;
   margin: auto;
 }
@@ -102,6 +103,10 @@
 }
 .peopleWhoAreFired {
 	
+}
+.articleimgslide {
+    margin: auto;
+    max-height: 400px;
 }
 .articleimg {
 	margin: auto;
