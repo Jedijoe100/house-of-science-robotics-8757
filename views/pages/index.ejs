@@ -26,14 +26,14 @@
     <div class="row">
         <div class="col-sm-8" id="about">
             <h2>About the club</h2><br>
-            <p>Our club is based in Tauranga NZ and we take people from all over the area. Our club is based at House of Science Tauranga which is a charitable organisation that aims at getting science into primary schools. We run our club every friday from 5-7pm and on saturdays from 9-11am. We currently have 3 highschool teams and __ VEX IQ teams.</p>
+            <p>Our club is based in Tauranga NZ and we take people from all over the area. Our club is based at House of Science Tauranga which is a charitable organisation that aims at getting science into primary schools. We run our club every friday from 5-7pm and on saturdays from 9-11am. We currently have 3 highschool teams and 4 VEX IQ teams.</p>
         </div>
         <div class="col-sm-4">
             <div id="map">My map will go here</div>
         </div>
     </div>
     <div>
-        
+
     </div>
 </div>
 <% include ../partials/footer.ejs %>
@@ -72,6 +72,8 @@
 <script>
     var article = 0;
     $(document).ready(function(){
+        $(".mySlide").hide();
+        $("#article0").show();
         $(".next").click(function(){
             article += 1;
             $(".mySlide").hide();
