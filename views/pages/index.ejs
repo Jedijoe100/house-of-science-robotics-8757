@@ -42,6 +42,7 @@
 
     </div>
 </div>
+<br>
 <% include ../partials/footer.ejs %>
 <script>
     var articleNum = 0;
@@ -61,7 +62,7 @@
         var image = xmlDoc.getElementsByTagName("src");
         picNum = date.length
         for(i = 0; i < date.length; i++){
-                document.getElementById("slideshowt").innerHTML += "<div class='mySlides fade' id='article" + article +"'><div class='numbertext'>"+articleNum+" / "+ date.length +"</div><img src='/images/"+ image[i].childNodes[0].nodeValue +"' class='articleimgslide'><div class='text'>" + caption[i].childNodes[0].nodeValue +"</div></div>";
+                document.getElementById("slideshowt").innerHTML += "<div class='mySlides fade' id='article" + articleNum +"'><div class='numbertext'>"+articleNum+" / "+ date.length +"</div><img src='/images/"+ image[i].childNodes[0].nodeValue +"' class='articleimgslide'><div class='text'>" + caption[i].childNodes[0].nodeValue +"</div></div>";
                 //document.getElementById("dots").innerHTML += "<span class='dot'nclick='currentSlide("+articleNum+")'></span>";
             articleNum += 1;
         }
