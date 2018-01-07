@@ -13,20 +13,25 @@
     <div id="slideshowt">
     
     </div>
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <a class="prev" >&#10094;</a>
+    <a class="next" >&#10095;</a>
    </div>
     <!-- Next and previous buttons -->
     
 
 <br>
-<div style="text-align:center">
+<!--<div style="text-align:center">
     <div id="dots"></div>
-</div>
+</div>-->
+    <div class="row">
+        <div class="col-sm-8"></div>
+        <div class="col-sm-4"></div>
+    </div>
 </div>
 <% include ../partials/footer.ejs %>
 <script>
     var articleNum = 0;
+    var picNum;
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
@@ -40,41 +45,38 @@
         var date = xmlDoc.getElementsByTagName("date");
         var caption = xmlDoc.getElementsByTagName("caption");
         var image = xmlDoc.getElementsByTagName("src");
+        picNum = date.length
         for(i = 0; i < date.length; i++){
-                articleNum += 1;
-                document.getElementById("slideshowt").innerHTML += "<div class='mySlides fade'><div class='numbertext'>"+articleNum+" / "+ date.length +"</div><img src='/images/"+ image[i].childNodes[0].nodeValue +"' class='articleimgslide'><div class='text'>" + caption[i].childNodes[0].nodeValue +"</div></div>";
-                document.getElementById("dots").innerHTML += "<span class='dot'nclick='currentSlide("+articleNum+")'></span>";
+                document.getElementById("slideshowt").innerHTML += "<div class='mySlides fade' id='article' + article><div class='numbertext'>"+articleNum+" / "+ date.length +"</div><img src='/images/"+ image[i].childNodes[0].nodeValue +"' class='articleimgslide'><div class='text'>" + caption[i].childNodes[0].nodeValue +"</div></div>";
+                //document.getElementById("dots").innerHTML += "<span class='dot'nclick='currentSlide("+articleNum+")'></span>";
+            articleNum += 1;
         }
     }
-    var slideIndex = 0;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-  console.log(slideIndex);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
+</script>
+<script>
+    var article = 0;
+    $(document).ready(function(){
+        $(".next").click(function(){
+            article += 1;
+            $(".mySlide").hide();
+            if(article <= articleNum){
+                $("#article" + article).show();
+            }else{
+                article = 0;
+                $("#article" + article).show();
+            }
+        });
+        $(".prev").click(function(){
+            article -= 1;
+            $(".mySlide").hide();
+            if(article >= 0){
+                $("#article" + article).show();
+            }else{
+                article = articleNum;
+                $("#article" + article).show();
+            }
+        });
+    });
 </script>
 </body>
 </html>
