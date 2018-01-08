@@ -79,7 +79,7 @@
         $(".next").click(function(){
             article += 1;
             $(".mySlides").hide();
-            if(article <= articleNum){
+            if(article <= articleNum - 1){
                 $("#article" + article).show();
                 console.log(""+article);
             }else{
