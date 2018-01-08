@@ -56,6 +56,9 @@
 .mySlides{
     display: none;
 }
+#article0 {
+    display: block;
+}
 
 /* Number text (1/3 etc) */
 .numbertext {
