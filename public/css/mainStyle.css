@@ -55,6 +55,7 @@
 }
 .mySlides{
     display: none;
+    text-align: center;
 }
 #article0 {
     display: block;
