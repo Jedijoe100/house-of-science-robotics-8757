@@ -63,9 +63,10 @@
         var date = xmlDoc.getElementsByTagName("date");
         var caption = xmlDoc.getElementsByTagName("caption");
         var image = xmlDoc.getElementsByTagName("src");
+        var NumberArt = date.length - 1;
         picNum = date.length;
         for(i = 0; i < date.length; i++){
-            document.getElementById("slideshowt").innerHTML += "<div class='mySlides' id='article" + articleNum +"'><div class='numbertext'>"+articleNum+" / "+ date.length - 1 +"</div><img src='/images/"+ image[i].childNodes[0].nodeValue +"' class='articleimgslide'><div class='text'>" + caption[i].childNodes[0].nodeValue +"</div></div>";
+            document.getElementById("slideshowt").innerHTML += "<div class='mySlides' id='article" + articleNum +"'><div class='numbertext'>" + articleNum + " / "+ NumberArt +"</div><img src='/images/"+ image[i].childNodes[0].nodeValue +"' class='articleimgslide'><div class='text'>" + caption[i].childNodes[0].nodeValue +"</div></div>";
             //document.getElementById("dots").innerHTML += "<span class='dot'nclick='currentSlide("+articleNum+")'></span>";
             articleNum += 1;
         }
