@@ -82,11 +82,11 @@
             $(".mySlides").hide();
             if(article <= articleNum - 1){
                 $("#article" + article).show();
-                console.log(""+article);
             }else{
                 article = 0;
                 $("#article" + article).show();
             }
+            console.log(""+article);
         });
         $(".prev").click(function(){
             article -= 1;
@@ -97,6 +97,7 @@
                 article = articleNum;
                 $("#article" + article).show();
             }
+            console.log(""+article);
         });
     });
 </script>
