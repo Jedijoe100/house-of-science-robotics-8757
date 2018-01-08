@@ -74,11 +74,11 @@
 <script>
     var article = 0;
     $(document).ready(function(){
-        $(".mySlide").hide();
+        $(".mySlides").hide();
         $("#article0").show();
         $(".next").click(function(){
             article += 1;
-            $(".mySlide").hide();
+            $(".mySlides").hide();
             if(article <= articleNum){
                 $("#article" + article).show();
                 console.log(""+article);
@@ -89,7 +89,7 @@
         });
         $(".prev").click(function(){
             article -= 1;
-            $(".mySlide").hide();
+            $(".mySlides").hide();
             if(article >= 0){
                 $("#article" + article).show();
             }else{
